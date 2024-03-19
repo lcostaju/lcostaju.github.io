@@ -6,43 +6,45 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="3">
+    <table border="3" align="center">
         <tr>
-            <td>Nome do funcionário</td>
-            <td>Sexo</td>
-            <td>Idade</td>
-            <td>Salário</td>
+            <th>Nome do funcionário</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Salário</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Maria José</td>
+            <td rowspan="2">Feminino</td>
+            <td>14</td>
+            <td>R$1.500,00</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Ana Clara</td>
+            <!-- <td></td> -->
+            <td>25</td>
+            <td>R$3.000,00</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>João Márcio</td>
+            <td rowspan="2">Masculino</td>
+            <td>74</td>
+            <td>R$5.000,00</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Robson Crusoé</td>
+            <!-- <td></td> -->
+            <td>55</td>
+            <td>R$8.000,00</td>
         </tr>
-        <tr>
-            <td colspan="3">Média de salário</td>
-            <td>R$4.375,00</td>
-            <!-- <td></td>
-            <td></td> -->
-        </tr>
+        <tfoot>
+            <tr>
+                <th colspan="3">Média de salário</th>
+                <th>R$4.375,00</th>
+                <!-- <td></td>
+                <td></td> -->
+            </tr>
+        </tfoot>        
     </table>
 </body>
 </html>
