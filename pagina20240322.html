@@ -3,14 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
 <body>
+    
     <form>
         <label for="txtNome">Nome:</label>
-        <input id="txtNome" type="text">
+        <input id="txtNome" type="text" placeholder="Nome completo">
+        <br></br>
         <label for="passSenha">Senha:</label>
-        <input id="passSenha" type="password">
+        <input id="passSenha" type="password" placeholder="5 a 8 caracteres">
+        <br></br>
+        <label for="txtDataNasc">Data de Nascimento:</label>
+        <input id="txtDataNasc" type="date">
+        <br></br>
+        <label for="txtNumeroCasa">Numero:</label>
+        <input id="txtNumeroCasa" type="number" max="9998" min="0" step="2">
+        <br></br>
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="txtEmail" >Email:</label>
+            <input id="txtemail" type="email" placeholder="seuemail@dominio.com">
+            <br></br>
+            <label for="txtSite" >Site:</label>
+            <input id="txtSite" type="url" placeholder="seusite.com">
+        </fieldset>
+
+        <label for="txtEstado">Estado</label>
+        <select id="txtEstado">
+            
+            <option value="">MG</option>
+            <option value="">RJ</option>
+            <option value="">MT</option>
+        </select>
+        <br>
+        <label for="txtSexo">Sexo:</label>
+        <input id="masc" type="radio" name="sexo">
+        <label for="masc">Masculino</label>
+
+        <input id="fem" type="radio" name="sexo">
+        <label for="fem">Feminino</label>
+        <br>
+        <label for="">Linguagem</label>
+        <br>
+        
+        <input type="checkbox" id="c">
+        <label for="c">C</label>
+        <br>
+        
+        <input type="checkbox" id="java">
+        <label for="java">Java</label>
+        <br>
+        
+        <input type="checkbox" id="Cobol">
+        <label for="lang">Cobol</label>
+        <br>
+        
+        <input type="checkbox" id="c#">
+        <label for="c#">C#</label>
+
+
+        
     </form>
 </body>
 </html>
