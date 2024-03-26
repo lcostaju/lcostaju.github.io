@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="txtNome">Nome:</label>
+        <input type="text" id="txtNome" placeholder="informe o nome" required>
+        <br>
+        <br>
+        <label for="dateDataNasc">Data de nascimento:</label>
+        <input type="date" id="dateDataNasc">
+        <br>
+        <br>
+        <label for="txtSexo">Sexo:</label>
+        <input id="masc" type="radio" name="sexo" >
+        <label for="masc">Masculino</label>
+        <input id="fem" type="radio" name="sexo" >
+        <label for="fem">Feminino</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Informações de contato</legend>
+        <label for="txtEmail">Email:</label>
+        <input type="email" id="txtEmail" >
+        <br>
+        <br>
+        <label for="txtTelefoneCelular">Telefone celular:</label>
+        <input type="tel" id="txtTelefoneCelular" maxlength="9" >
+        <br>
+        <br>
+        <label for="txtWebSite">Web site Pessoal:</label>
+        <input type="url" id="txtWebSite" >
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Localização</legend>
+        <label for="txtEndereco">Endereço:</label>
+        <input type="text" id="txtEndereco" >
+        <br>
+        <br>
+        <label for="numNumero">Numero:</label>
+        <input type="number" id="numNumero" min="1" max="9999" >
+        <br>
+        <br>
+        <label for="txtCidade">Cidade:</label>
+        <input type="text" id="txtCidade" >
+        <br>
+        <br>
+        <label for="listEstado">Estado:</label>
+        <select id="listEstado" >
+            <option value="">AC</option>
+            <option value="">AL</option>
+            <option value="">AP</option>
+            <option value="">AM</option>
+            <option value="">BA</option>
+            <option value="">CE</option>
+            <option value="">DF</option>
+            <option value="">ES</option>
+            <option value="">GO</option>
+            <option value="">MA</option>
+            <option value="">MT</option>
+            <option value="">MS</option>
+            <option value="">MG</option>
+            <option value="">PA</option>
+            <option value="">PB</option>
+            <option value="">PR</option>
+            <option value="">PE</option>
+            <option value="">PI</option>
+            <option value="">RJ</option>
+            <option value="">RN</option>
+            <option value="">RS</option>
+            <option value="">RO</option>
+            <option value="">RR</option>
+            <option value="">SC</option>
+            <option value="">SP</option>
+            <option value="">SE</option>
+            <option value="">TO</option>
+        </select>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</form>
+</body>
+</html>
