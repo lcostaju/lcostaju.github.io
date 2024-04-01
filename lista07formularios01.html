@@ -6,54 +6,55 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Cadastro de clientes</h1>
+    <p style="color: red;">Todos os campos são de preenchimento obrigatório</p>
     <form>
     <fieldset>
         <legend>Dados pessoais</legend>
         <label for="txtNome">Nome:</label>
-        <input type="text" id="txtNome" placeholder="informe o nome" required>
+        <input type="text" id="txtNome" required>
         <br>
         <br>
         <label for="dateDataNasc">Data de nascimento:</label>
-        <input type="date" id="dateDataNasc">
+        <input type="date" id="dateDataNasc" required>
         <br>
         <br>
-        <label for="txtSexo">Sexo:</label>
-        <input id="masc" type="radio" name="sexo" >
+        <label>Sexo:</label>
+        <input id="masc" type="radio" name="sexo" required>
         <label for="masc">Masculino</label>
-        <input id="fem" type="radio" name="sexo" >
+        <input id="fem" type="radio" name="sexo" required>
         <label for="fem">Feminino</label>
     </fieldset>
     <br>
     <fieldset>
         <legend>Informações de contato</legend>
         <label for="txtEmail">Email:</label>
-        <input type="email" id="txtEmail" >
+        <input type="email" id="txtEmail" required>
         <br>
         <br>
         <label for="txtTelefoneCelular">Telefone celular:</label>
-        <input type="tel" id="txtTelefoneCelular" maxlength="9" >
+        <input type="tel" id="txtTelefoneCelular" maxlength="9" required>
         <br>
         <br>
         <label for="txtWebSite">Web site Pessoal:</label>
-        <input type="url" id="txtWebSite" >
+        <input type="url" id="txtWebSite" required>
     </fieldset>
     <br>
     <fieldset>
         <legend>Localização</legend>
         <label for="txtEndereco">Endereço:</label>
-        <input type="text" id="txtEndereco" >
+        <input type="text" id="txtEndereco" required>
         <br>
         <br>
         <label for="numNumero">Numero:</label>
-        <input type="number" id="numNumero" min="1" max="9999" >
+        <input type="number" id="numNumero" min="1" max="9999" required>
         <br>
         <br>
         <label for="txtCidade">Cidade:</label>
-        <input type="text" id="txtCidade" >
-        <br>
+        <input type="text" id="txtCidade" required>        
         <br>
         <label for="listEstado">Estado:</label>
-        <select id="listEstado" >
+        <select id="listEstado" required>
             <option value="">AC</option>
             <option value="">AL</option>
             <option value="">AP</option>
