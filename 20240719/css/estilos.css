@@ -1,0 +1,6 @@
+p,h1{/*Agrupamento de seletores*/
+    letter-spacing: 5px;
+    font-family: Arial black;
+    background-color: yellow;
+    color: blue;
+}
