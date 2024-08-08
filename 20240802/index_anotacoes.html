@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .caixaGenerica{
+            cursor: pointer;
+            border: 1px solid white;
+            width: 100px;
+            height: 35px;
+            background-color: black;
+            /* background-image: url('imagens/faceBlack.png'); */
+            background-repeat: no-repeat;
+            /* background-position: bottom right; */
+            background-position: center 10px;
+            /* background-size: 20px 20px; */
+            color: white;
+            text-align: center;
+            padding-top:50px;
+            
+            
+
+        }
+        .caixaFace.caixaInstagran:hover{
+            /* background-image: url('imagens/face.png'); */
+            color:rgb(108,108,255);
+        }
+        .caixaFace:hover{
+            background-image: url('imagens/face.png');
+            color:rgb(108,108,255);
+        }
+        .caixaInstagran:hover{
+            background-image: url('imagens/insta.png');
+            color:rgb(171, 39, 125);
+        }
+
+        .caixaFace{
+            background-image: url('imagens/faceBlack.png');
+        }
+        .caixaInstagran{
+            background-image: url('imagens/instaBlack.png');
+        }
+        .caixaYoutube{
+            background-image: url('imagens/youtubeBlack.png');
+        }
+        .caixaYoutube:hover{
+            background-image: url('imagens/youtube.png');
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="caixaGenerica caixaFace">
+        Facebook
+    </div>
+    <div class="caixaGenerica caixaInstagran">
+        Instagran
+    </div>
+    <div class="caixaGenerica caixaYoutube">
+        Youtube
+    </div>
+</body>
+</html>

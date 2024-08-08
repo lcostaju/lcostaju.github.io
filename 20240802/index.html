@@ -1,69 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <style>
-        *{
+        * {
             margin: 0px;
+            /* padding: 0px; */
         }
-        .caixaGenerica{
-            cursor: pointer;
-            border: 1px solid white;
+
+        ul {
+            text-align: center;
+            background-color: black;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            
+        }
+        li{
+            display: inline-block;
             width: 100px;
-            height: 35px;
+            height: 60px;
+            /* border: 1px solid white; */
+            /* margin-left: -5px; */
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .genericMenuIcons {
+
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            /* display: inline-block; */
+            border: 1px solid white;
+            
+            
             background-color: black;
             /* background-image: url('imagens/faceBlack.png'); */
             background-repeat: no-repeat;
             /* background-position: bottom right; */
             background-position: center 10px;
             /* background-size: 20px 20px; */
+            position: relative;
+            text-emphasis-position: 10px;
+            padding-top: 30px;
+            padding-bottom: 0px;
+
+            
+            
+            
+            text-decoration: none;
             color: white;
-            text-align: center;
-            padding-top:50px;
+            font-family: "Oswald", sans-serif;
             
-            
-
-        }
-        .caixaFace.caixaInstagran:hover{
-            /* background-image: url('imagens/face.png'); */
-            color:rgb(108,108,255);
-        }
-        .caixaFace:hover{
-            background-image: url('imagens/face.png');
-            color:rgb(108,108,255);
-        }
-        .caixaInstagran:hover{
-            background-image: url('imagens/insta.png');
-            color:rgb(171, 39, 125);
         }
 
-        .caixaFace{
+        
+        
+        .menuFace{
             background-image: url('imagens/faceBlack.png');
         }
-        .caixaInstagran{
+        .menuInsta{
             background-image: url('imagens/instaBlack.png');
         }
-        .caixaYoutube{
+        .menuMaps{
+            background-image: url('imagens/mapsBlack.png');
+        }
+        .menuTwitter{
+            background-image: url('imagens/twitterBlack.png');
+        }
+        .menuYoutube{
             background-image: url('imagens/youtubeBlack.png');
         }
-        .caixaYoutube:hover{
-            background-image: url('imagens/youtube.png');
-            color: red;
+        .menuFace:hover{
+            background-image: url(imagens/face.png);
+            background-color: white;
+            color: blue;
         }
-        
     </style>
 </head>
+
 <body>
-    <div class="caixaGenerica caixaFace">
-        Facebook
-    </div>
-    <div class="caixaGenerica caixaInstagran">
-        Instagran
-    </div>
-    <div class="caixaGenerica caixaYoutube">
-        Youtube
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li ><a href="" class="genericMenuIcons">Facebook</a></li>
+                <li ><a href="" class="genericMenuIcons">Instagran</a></li>
+                <li ><a href="" class="genericMenuIcons">Google Maps</a></li>
+                <li ><a href="" class="genericMenuIcons">Twitter</a></li>
+                <li ><a href="" class="genericMenuIcons">Youtube</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
