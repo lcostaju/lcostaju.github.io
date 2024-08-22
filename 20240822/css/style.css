@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: auto;
+}
+.container > div{
+    border: 5px solid red;
+    width: 100%;
+}
