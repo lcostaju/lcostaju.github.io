@@ -1,0 +1,25 @@
+/* Configuração Global */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Celular*/
+.container{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.apresentacao > div > div{
+    border: 2px solid red;
+}
+/*Tablet*/
+@media screen and (min-width:768px) and (min-width:1023px) {
+    
+}
+
+/* Desktop*/
+@media screen and (min-width:1024px) {
+    
+}
