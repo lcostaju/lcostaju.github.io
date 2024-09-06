@@ -1,0 +1,127 @@
+/* Configuração Global */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(12, 12, 149);
+    border-bottom: 5px solid yellow;
+}
+
+nav{
+    margin: auto;
+    /* border: 2px solid white; */
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav > ul{
+    margin: auto;
+    width: 600px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+nav > ul > li{
+    /* border: 2px solid black; */
+    width: 20%;
+    height: 60px;
+    display: flex;
+}
+
+nav li > a{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+nav li > a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+main > section{
+    background-color: white;
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+main{
+    background-color: black;
+}
+
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.container>div{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+section p {
+    text-align: justify;
+    margin: 15px 0px;
+}
+
+.apresentacao > .container img{
+    width: 100%;
+}
+
+.apresentacao h1{
+    color: orangered;
+    font-weight: bold;
+}
+.celulares {
+    text-align: center;
+}
+.celulares h2{
+    
+    text-align: center;
+    color: blue;
+    font-size: large;
+}
+
+.celulares h2:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+summary{
+    color: orangered;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sobreNos img{
+    width: 70%;
+}
+.sobreNos button{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.sobreNos button:hover{
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+}
+
+.sobreNos li{
+    padding: 5px;
+}
+
+
