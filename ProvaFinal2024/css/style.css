@@ -1,0 +1,160 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: rgb(253, 193, 81);
+    
+}
+
+nav > ul{
+    /* display: inline-block; */
+    list-style: none;
+    text-align: center;
+    
+}
+
+nav > ul > li{
+    display: inline-block;
+}
+
+header nav a:link, header nav a:visited {
+    border-top: 5px solid rgb(253, 193, 81);
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    border-top: 5px solid black;
+}
+
+.viajeSeguro{
+    background-color: black;
+    padding: 50px;
+    text-align: justify;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: auto;
+    
+}
+
+.viajeSeguro > .container{
+    background-color: white;
+    border: 10px solid orange;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.viajeSeguro > .container > div{
+    width: 50%;
+    margin: 20px;
+    /* padding: 20px; */
+}
+
+.viajeSeguro img{
+    width: 80%;
+    
+}
+.viajeSeguro h2{
+    margin-bottom: 20px;
+}
+
+.viajeSeguro p{
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+
+.produtos .container{
+    flex-direction: column;
+    text-align: center;
+}
+
+.produtos h2{
+    margin-top: 50px;
+    color: orangered;
+}
+
+.produtos p,.pacotes p{
+    margin-top: 20px;
+    margin-bottom: 50PX;
+}
+
+.pacotes{
+    background-color: lightgray;
+    padding: 50px;
+    text-align: center;
+}
+
+.pacotes .container{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.pacotes .container > div{
+    margin: 20px;
+    width: 33.33%;
+}
+
+.pacotes h2{
+    color: orangered;
+}
+
+.mala{
+    padding: 100px;
+    text-align: justify;
+}
+
+.mala .container div{
+    padding: 50px;
+}
+.mala p{
+    margin-bottom: 20px;
+}
+
+summary{
+    color: orangered;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+.destinos{
+    padding: 100px;
+    background-color: rgb(253, 193, 81);
+    text-align: center;
+}
+
+.destinos .container >div{
+    margin: 20px;
+}
+
+.destinos h2{
+    color: orangered;
+    margin-bottom: 20px;
+}
