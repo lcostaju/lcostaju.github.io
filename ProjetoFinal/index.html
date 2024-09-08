@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
@@ -12,14 +12,60 @@
         <nav class="navBar">
             <h1>GT Legends Motors</h1>
             <ul>
-                <li><a class="opNav opHome" href="">Home</a></li>
-                <li><a class="opNav" href="">Novos</a></li>
-                <li><a class="opNav" href="">Usados</a></li>
-                <li><a class="opNav" href="">Lendários</a></li>
+                <li><a class="opNav opHome" href="index.html">Home</a></li>
+                <li><a class="opNav opNew" href="new.html">Novos</a></li>
+                <li><a class="opNav opUsed" href="usados.html">Usados</a></li>
+                <li><a class="opNav opLeg" href="lendas.html">Lendas</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="apresentacao">
+            <div class="container">
+                <div>
+                    <h1>Start your engine!</h1>
+                    <p>Seu proximo objetivo está aqui!</p>
+                    <p>Somos uma concessionaria fictícia inspira nas lojase nos preços dentro do jogo Gran Turismo 7. 
+                        Entre e veja algumas simulações de como seria a venda desses carros na realidade.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/apresentacao.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="granTurismo">
+            <div class="container">
+            <h2>Visão geral do jogo</h2>
+            <p>Gran Turismo foi lançado como sendo “o verdadeiro simulador de corrida” em 1997. Com uma seleção de carros conhecidos de fabricantes da vida real e a possibilidade de dirigi-los em um mundo virtual realista, o jogo foi muito elogiado não apenas por jogadores, mas também por entusiastas de automobilismo de todo o mundo. Após 25 anos e várias iterações, o Gran Turismo retorna com uma culminação dos conceitos básicos da série. Pilotar. Colecionar. Personalizar. Vivencie o prazer por carros no mundo do Gran Turismo 7.</p>
+            <img src="img/gt7-foto1.jpg" alt="">
+        </div>
+        </section>
+        <section class="contato">
+            <div class="container">
+                <div>
+                <p>Se não encontrou o que busca, entraremos em contato com você.</p>
+                <p>Deixe agora o seu contato para ser notificado(a) quando chegar o seu modelo</p>
+                <img src="img/porcehe_no_back.png" alt="">
+                </div>
+                <div>
+                <form action="">
+                    <fieldset>
+                        <legend>Insira seus dados:</legend>
+                        <label for="txtModelo">Modelo desejado</label>
+                        <input id="txtModelo" type="text">
+                        <label for="txtTelefone">Telefone/Whatsapp</label>
+                        <input id="txtTelefone" type="fone">
+                        <label for="txtEmail">email</label>
+                        <input id="txtEmail" type="email">
+                        <label for="txtNome">Nome</label>
+                        <input id="txtNome" type="text">
+                    </fieldset>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <h1>GT Legends Motors</h1>
         <p>Inicia sua grande jornada</p>

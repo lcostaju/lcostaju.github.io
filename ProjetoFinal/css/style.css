@@ -15,11 +15,20 @@ header{
     background-repeat: no-repeat;
     background-size: 30%;
     background-position-y:center;
-    background-position-x: 15px;
+    background-position-x: 12px;
 }
 .opHome{
     background-image: url('../img/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png');
 
+}
+.opNew{
+    background-image: url('../img/grade_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png');
+}
+.opUsed{
+    background-image: url('../img/history_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png');
+}
+.opLeg{
+    background-image: url('../img/account_balance_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png');
 }
 .navBar{
     /* border: 1px solid green; */
@@ -61,11 +70,11 @@ header{
 .navBar a{
     margin: 5px;
     /* border: 1px solid rgb(194, 17, 17); */
-    color: beige;
+    color: rgb(206, 199, 199);
     text-decoration: none;
     text-align: right;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     transition: all 0.3s;
 }
@@ -74,13 +83,15 @@ nav a:hover{
 }
 
 footer{
+    /* border: 2px solid white; */
     background-color: black;
     color: white;
     text-align: center;
+    padding-top: 20px;
 }
 footer h1{
     /* border: 2px solid white;     */
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     font-family: "Racing Sans One", sans-serif;
     color: beige;
@@ -90,6 +101,109 @@ footer p:nth-of-type(1){
     color: orangered;
     margin-bottom: 20px;
 }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    /* padding: 20px; */
+}
+
+.container>div{
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+
+.apresentacao img{
+    /* border: 10px solid black; */
+    width: 100%;
+    border-radius: 10px;
+    
+}
+body{
+    background-color: silver;
+}
+section{
+    margin: auto;
+    width: 1200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: silver;
+
+}
+.apresentacao .container > div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;    
+    justify-content: center;
+    
+
+}
+
+.apresentacao h1{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.apresentacao p{
+    text-align: justify;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.granTurismo .container{
+    flex-direction: column;
+    text-align: center;
+}
+.granTurismo{
+    padding: 20px;
+}
+
+.granTurismo p{
+    margin: 20px 20px
+}
+.contato{
+    padding: 20px;
+}
+.contato .container{
+    padding: 20px;
+    /* border: 2px solid white; */
+}
+
+fieldset{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+input{
+    margin: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.contato img{
+    width: 80%;
+    /* border: 1px solid white; */
+}
+
+p{
+    margin-bottom: 20px;
+}
+.contato p:nth-of-type(1){
+    color: orangered;
+    font-size: large;
+    
+}
+
+
+
 
 
 
