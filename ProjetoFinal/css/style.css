@@ -197,6 +197,22 @@ input{
     /* border: 1px solid white; */
 }
 
+button{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3;
+}
+
+button:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+
 p{
     margin-bottom: 20px;
 }
@@ -234,7 +250,7 @@ p{
 .containerCar img{
     width: 100%;
     border-radius: 20px;
-    transition: all 0,9s;
+    transition: all 0.3s;
 }
 .containerCar img:hover{
     cursor:zoom-in;
