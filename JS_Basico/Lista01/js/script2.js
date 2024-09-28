@@ -1,4 +1,3 @@
-nome = prompt('Informe seu nome:');
-srNome = prompt('Informe seu sobrenome:');
+alert("Pressione o botão “Ok”\npara visualizar o nome da disciplina")
 
-alert(`Nome completo: ${nome} ${srNome}`)
+document.write('<h1>Fundamentos de Web Design II.</h1>');
