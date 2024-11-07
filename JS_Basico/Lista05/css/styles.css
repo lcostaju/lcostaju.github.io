@@ -7,7 +7,9 @@
 
 ul{
     list-style: none;
-    display: inline-block;
+    display: flex;
+    width: 1200px;
+    margin: auto;
 }
 li{
     /* background-color: blue; */
@@ -23,4 +25,9 @@ a{
 }
 a:hover{
     background-color: red;
+}
+h1{
+    text-align: center;
+    width: 1200px;
+    margin: auto;
 }
