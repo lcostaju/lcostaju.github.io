@@ -32,11 +32,12 @@ body, html {
 .container>div>div{
     background-color: rgb(109, 210, 109); /* Cor de fundo */
     border: 3px solid black;
+
 }
 
 /* Estiliza a imagem dentro de cada div */
 .container img {
-    width: 130px; /* Imagem ocupa toda a largura da div */
+    width: 150px; /* Imagem ocupa toda a largura da div */
     height: 200px; /* Altura fixa para manter proporção */
     /* margin: 20px; */
     
@@ -54,8 +55,10 @@ body, html {
     color: black;
     margin: 10px;
     font-weight: bolder;
+    white-space: nowrap;
 }
 span{
     color: red;
     font-size: large;
+    white-space: nowrap;
 }
