@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Define o estilo do container principal */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+/* Estiliza cada candidato */
+.container > div {  
+    width: 25%; 
+    text-align: center;
+    margin: 2px;
+    
+}
+
+.container>div>div{
+    background-color: rgb(109, 210, 109); /* Cor de fundo */
+    border: 3px solid black;
+}
+
+/* Estiliza a imagem dentro de cada div */
+.container img {
+    width: 130px; /* Imagem ocupa toda a largura da div */
+    height: 200px; /* Altura fixa para manter proporção */
+    /* margin: 20px; */
+    
+}
+
+/* Estiliza o título e parágrafos */
+.container h1 {
+    font-size: 1.2em;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1em;
+    color: black;
+    margin: 10px;
+    font-weight: bolder;
+}
+span{
+    color: red;
+    font-size: large;
+}
