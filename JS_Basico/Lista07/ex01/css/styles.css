@@ -1,0 +1,14 @@
+.boxBoy{
+    /* border: 2px solid black; */
+    width: 180px;
+    text-align: center;
+    margin: auto;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
