@@ -46,7 +46,7 @@ input[type="password"] {
     outline: none;
     font-size: 14px;
     background: #f9f9f9;
-    transition: border-color 0.3s;
+    /* transition: border-color 0.3s; */
 }
 
 /* input[type="text"]:focus,
@@ -62,7 +62,7 @@ input[type="reset"] {
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
-    transition: background 0.3s;
+    /* transition: background 0.3s; */
 }
 
 input[type="button"] {
