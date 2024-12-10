@@ -6,8 +6,7 @@
 
 /* styles.css */
 body {
-    margin: 0;
-    padding: 0;
+    
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #4e0f8a, #301b60);
     color: #fff;
@@ -16,7 +15,6 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url('../img/3402668.jpg'); /* Insira a imagem de fundo aqui */
-    background-size: cover;
     background-position: center;
 }
 
