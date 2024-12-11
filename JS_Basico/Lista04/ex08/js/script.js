@@ -52,3 +52,4 @@ for (j = 0; j < 8; j++)  // Gerar 8 caracteres
 
 
 console.log(pss); // Exibe a senha gerada
+document.write(pss); // Exibe a senha gerada na página
