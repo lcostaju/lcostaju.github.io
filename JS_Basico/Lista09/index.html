@@ -4,127 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Lista 09</title>
 </head>
 
 <body>
     <form action="">
-    <label for="NumBinario">Numero binário:</label>
-    <input type="text" id="numBinario" value="010101">
-    <input type="button" id="validarBin" value="Validar">
-    
-    
-    <label for="NumHex">Números hexadecimais:</label>
-    <input type="text" id="NumHex" value="AF">
-    <input type="button" id="validarNumHex" value="Validar">
-    
-    
-    <label for="numDec">Números decimais:</label>
-    <input type="text" id="numDec" value="20,36">
-    <input type="button" id="btnValidarNumDec" value="Validar">
-    
-    
-    <label for="numReal">Números reais:</label>
-    <input type="text" id="numReal" value="2088.23">
-    <input type="button" id="btnValidarNumReal" value="Validar">
-    
-    
-    <label for="txtHora">Horário no formato 00:00:00 :</label>
-    <input type="text" id="txtHora" value="00:00:00">
-    <input type="button" id="btnValidarHora" value="Validar">
-    
-    
-    <label for="txtData">Data de nascimento: dd/mm/aaaa ou dd/mm/aa</label>
-    <input type="text" id="txtData" value="01/01/2000">
-    <input type="button" id="btnValidarData" value="Validar">
-    
-    
-    <label for="txtCep">CEP:</label>
-    <input type="text" id="txtCep" value="12345-678">
-    <input type="button" id="btnValidarCep" value="Validar">
+        <div class="form-group">
+            <label for="NumBinario">Numero binário:</label>
+            <input type="text" id="numBinario" value="010101">
+            <input type="button" id="validarBin" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="NumHex">Números hexadecimais:</label>
+            <input type="text" id="NumHex" value="AF">
+            <input type="button" id="validarNumHex" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="numDec">Números decimais:</label>
+            <input type="text" id="numDec" value="20,36">
+            <input type="button" id="btnValidarNumDec" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="numReal">Números reais:</label>
+            <input type="text" id="numReal" value="2088.23">
+            <input type="button" id="btnValidarNumReal" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtHora">Horário no formato 00:00:00 :</label>
+            <input type="text" id="txtHora" value="00:00:00">
+            <input type="button" id="btnValidarHora" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtData">Data de nascimento: dd/mm/aaaa ou dd/mm/aa</label>
+            <input type="text" id="txtData" value="01/01/2000">
+            <input type="button" id="btnValidarData" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtCep">CEP:</label>
+            <input type="text" id="txtCep" value="12345-678">
+            <input type="button" id="btnValidarCep" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtCpf">CPF:</label>
+            <input type="text" id="txtCpf" value="123.456.789-09">
+            <input type="button" id="btnValidarCpf" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtCnpj">CNPJ:</label>
+            <input type="text" id="txtCnpj" value="12.345.678/0001-09">
+            <input type="button" id="btnValidarCnpj" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtNumParenteses">Números entre parênteses:</label>
+            <input type="text" id="txtNumParenteses" value="(12)">
+            <input type="button" id="btnValidarNumParenteses" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtEmail">Email:</label>
+            <input type="text" id="txtEmail" value="xxx@yyy.ccc">
+            <input type="button" id="btnValidarEmail" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtEndereco">Endereço (domínio ou IPv4):</label>
+            <input type="text" id="txtEndereco" value="192.168.1.1">
+            <input type="button" id="btnValidarEndereco" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtAltura">Altura de uma pessoa:</label>
+            <input type="text" id="txtAltura" value="1.80">
+            <input type="button" id="btnValidarAltura" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtNome">Nome próprio:</label>
+            <input type="text" id="txtNome" value="Lucio">
+            <input type="button" id="btnValidarNome" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtTelefone">Telefone no padrão internacional:</label>
+            <input type="text" id="txtTelefone" value="+55(11)99999-9999">
+            <input type="button" id="btnValidarTelefone" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtTexto">Texto:</label>
+            <input type="text" id="txtTexto" value="IFTM campus Uberlândia">
+            <input type="button" id="btnValidarTexto" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtNumCem">Números de 1 a 100:</label>
+            <input type="text" id="txtNumCem" value="100">
+            <input type="button" id="btnValidarNumCem" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtPlaca">Placa de carro (padrão Mercosul):</label>
+            <input type="text" id="txtPlaca" value="XYZ9W87">
+            <input type="button" id="btnValidarPlaca" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtVogais">Palavras contendo vogais e/ou algumas dessas letras: “b”, “c”, “d”:</label>
+            <input type="text" id="txtVogais" value="dado">
+            <input type="button" id="btnValidarVogais" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtFaturamento">O faturamento de uma empresa:</label>
+            <input type="text" id="txtFaturamento" value="R$1.000.000,00">
+            <input type="button" id="btnValidarFaturamento" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtMatricula">Número de matrícula:</label>
+            <input type="text" id="txtMatricula" value="IFTM-001/001-00">
+            <input type="button" id="btnValidarMatricula" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtMatricula2">Número de matrícula:</label>
+            <input type="text" id="txtMatricula2" value="MT-01.000-Iftm">
+            <input type="button" id="btnValidarMatricula2" value="Validar">
+        </div>
+
+        <div class="form-group">
+            <label for="txtMatricula3">Número de matrícula:</label>
+            <input type="text" id="txtMatricula3" value="MT-12.345-IFTM UBERLÂNDIA">
+            <input type="button" id="btnValidarMatricula3" value="Validar">
+        </div>
+    </form>
+
     <script src="js/script.js"></script>
-    
-    
-    <label for="txtCpf">CPF:</label>
-    <input type="text" id="txtCpf" value="123.456.789-09">
-    <input type="button" id="btnValidarCpf" value="Validar">
-    
-    
-    <label for="txtCnpj">CNPJ:</label>
-    <input type="text" id="txtCnpj" value="12.345.678/0001-09">
-    <input type="button" id="btnValidarCnpj" value="Validar">
-    
-    
-    <label for="txtNumParenteses">Números entre parênteses:</label>
-    <input type="text" id="txtNumParenteses" value="(12)">
-    <input type="button" id="btnValidarNumParenteses" value="Validar">
-    
-    
-    <label for="txtEmail">Email:</label>
-    <input type="text" id="txtEmail" value="xxx@yyy.ccc">
-    <input type="button" id="btnValidarEmail" value="Validar">
-    
-    
-    <label for="txtEndereco">Endereço (domínio ou IPv4):</label>
-    <input type="text" id="txtEndereco" value="192.168.1.1">
-    <input type="button" id="btnValidarEndereco" value="Validar">
-    
-    
-    <label for="txtAltura">Altura de uma pessoa:</label>
-    <input type="text" id="txtAltura" value="1.80">
-    <input type="button" id="btnValidarAltura" value="Validar">
-    
-    
-    <label for="txtNome">Nome próprio</label>
-    <input type="text" id="txtNome" value="Lucio">
-    <input type="button" id="btnValidarNome" value="Validar">
-    
-    
-    <label for="txtTelefone">Telefone no padrão internacional</label>
-    <input type="text" id="txtTelefone" value="+55(11)99999-9999">
-    <input type="button" id="btnValidarTelefone" value="Validar">
-    
-    
-    <label for="txtTexto">Texto</label>
-    <input type="text" id="txtTexto" value="IFTM campus Uberlândia">
-    <input type="button" id="btnValidarTexto" value="Validar">
-    
-    
-    <label for="txtNumCem">Números de 1 a 100:</label>
-    <input type="text" id="txtNumCem" value="100">
-    <input type="button" id="btnValidarNumCem" value="Validar">
-    
-    
-    <label for="txtPlaca">Placa de carro (padrão Mercosul):</label>
-    <input type="text" id="txtPlaca" value="XYZ9W87">
-    <input type="button" id="btnValidarPlaca" value="Validar">
-    
-    
-    <label for="txtVogais">Palavras contendo vogais e/ou algumas dessas letras: “b”, “c”, “d”:</label>
-    <input type="text" id="txtVogais" value="dado">
-    <input type="button" id="btnValidarVogais" value="Validar">
-    
-    
-    <label for="txtFaturamento">O faturamento de uma empresa:</label>
-    <input type="text" id="txtFaturamento" value="R$1.000.000,00">
-    <input type="button" id="btnValidarFaturamento" value="Validar">
-    
-    
-    <label for="txtMatricula">Número de matrícula:</label>
-    <input type="text" id="txtMatricula" value="IFTM-001/001-00">
-    <input type="button" id="btnValidarMatricula" value="Validar">
-    
-    
-    <label for="txtMatricula2">Número de matrícula:</label>
-    <input type="text" id="txtMatricula2" value="MT-01.000-Iftm">
-    <input type="button" id="btnValidarMatricula2" value="Validar">
-    
-        
-    <label for="txtMatricula3">Número de matrícula:</label>
-    <input type="text" id="txtMatricula3" value="MT-12.345-IFTM UBERLÂNDIA">
-    <input type="button" id="btnValidarMatricula3" value="Validar">
-</form>
 </body>
 
 </html>

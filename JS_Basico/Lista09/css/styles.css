@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -13,6 +8,12 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espaçamento entre os grupos */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os elementos dentro de um grupo */
 }
 
 label {
@@ -44,23 +45,3 @@ input[type="button"] {
 input[type="button"]:hover {
     background-color: #0056b3;
 }
-
-form > * {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaçamento entre os elementos (label, input, botão) */
-    flex-wrap: wrap; /* Permite quebra de linha, se necessário */
-}
-
-form > * label {
-    flex: 0 0 200px; /* Garante que o label tenha largura fixa */
-}
-
-form > * input[type="text"] {
-    flex: 0 0 250px; /* Garante que o input de texto tenha largura fixa */
-}
-
-form > * input[type="button"] {
-    flex: 0 0 auto; /* Faz com que o botão tenha largura automática */
-}
-
