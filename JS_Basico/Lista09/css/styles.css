@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os grupos */
+}
+
+label {
+    display: inline-block;
+    width: 200px; /* Largura fixa para alinhamento dos labels */
+    text-align: right; /* Alinha o texto do label à direita */
+    margin-right: 10px; /* Espaçamento entre o label e o input */
+}
+
+input[type="text"] {
+    width: 250px; /* Largura fixa dos campos de texto */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="button"] {
+    padding: 5px 10px;
+    width: auto; /* Corrige para o botão ter largura apropriada */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    max-width: 150px; /* Limita a largura máxima do botão */
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+form > * {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os elementos (label, input, botão) */
+    flex-wrap: wrap; /* Permite quebra de linha, se necessário */
+}
+
+form > * label {
+    flex: 0 0 200px; /* Garante que o label tenha largura fixa */
+}
+
+form > * input[type="text"] {
+    flex: 0 0 250px; /* Garante que o input de texto tenha largura fixa */
+}
+
+form > * input[type="button"] {
+    flex: 0 0 auto; /* Faz com que o botão tenha largura automática */
+}
+
