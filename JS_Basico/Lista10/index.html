@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>É PAR</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div>
+            <label for="selNivel">Nivel:</label>
+            <select id="selNivel">
+                <option value="">Selecione uma dificuldade</option>
+                <option value="0">Fácil</option>
+                <option value="1">Médio</option>
+                <option value="2">Difícil</option>
+            </select>
+        </div>
+        <div>
+            <p>Tempo: <span id="txtTempo">00:00</span></p>
+        </div>
+        <div>
+            
+            <input type="button" id="btnIniciar" value="Iniciar">
+            <input type="button" id="btnPausar" value="Pausar">
+            <input type="button" id="btnParar" value="Parar">
+        </div>
+    </div>
+    </header>
+    <main>
+
+        <div class="containerNums">
+            <p id="txtNumero">100</p>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Acertos: <span id="txtAcertos"></span></p>
+        <p>Erros: <span id="txtErros"></span></p>
+        <p>Numero de pares sorteados:<span id="txtParesSort"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

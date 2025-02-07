@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerNums {
+    width: 300px;  /* Defina a largura conforme necessário */
+    height: 300px; /* Ajuste a altura conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+
+
