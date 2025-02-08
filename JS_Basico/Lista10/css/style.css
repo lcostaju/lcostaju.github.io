@@ -1,17 +1,77 @@
-*{
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron&display=swap'); 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
 
-.containerNums {
-    width: 300px;  /* Defina a largura conforme necessário */
-    height: 300px; /* Ajuste a altura conforme necessário */
+body {
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz o body ocupar toda a tela */
+}
+
+header, footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+/* Mobile First: Itens empilhados */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Ajuste do conteúdo principal */
+main {
+    flex: 1; /* Faz o main ocupar o espaço disponível */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
 }
 
+/* Número grande e clicável */
+.containerNums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh; /* Ocupa a maior parte da tela */
+}
 
+#txtNumero {
+    font-size: 10rem; /* Aumenta o tamanho do número */
+    font-weight: bold;
+    cursor: pointer; /* Indica que pode ser clicado */
+    user-select: none; /* Impede seleção acidental */
+}
 
+/* Ajuste do footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Responsivo: Alinhar horizontalmente em telas maiores */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
