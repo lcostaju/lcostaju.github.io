@@ -37,6 +37,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/backgroud.jpg);
+    background-position:bottom; 
 }
 
 /* Número grande e clicável */

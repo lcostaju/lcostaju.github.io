@@ -11,6 +11,9 @@ window.addEventListener("DOMContentLoaded",function(){
     const btnParar = document.getElementById("btnParar");
     const btnPausar = document.getElementById("btnPausar");
 
+    var audio =  new Audio("audio/intro.mp3");
+    audio.play();
+
     var numerosSorteados = 0;
     var numerosPares = 0;
     var playNums = false;
@@ -94,9 +97,26 @@ window.addEventListener("DOMContentLoaded",function(){
         }else if(nivel == "1"){
             txtTempo.innerHTML = "01:15";
         }else if(nivel == "2"){
-            txtTempo.innerHTML = "00:05";
+            txtTempo.innerHTML = "00:30";
         }else{
             txtTempo.innerHTML = "00:00";
+        }
+    }
+
+    function tocarAudioNivel(){
+        var nivel = selNivel.value;
+        if(nivel == "0"){
+            audio.pause();
+            audio = new Audio("audio/facil.mp3");
+            audio.play();
+        }else if(nivel == "1"){
+            audio.pause();
+            audio = new Audio("audio/medio.mp3");
+            audio.play();
+        }else if(nivel == "2"){
+            audio.pause();
+            audio = new Audio("audio/dificil.mp3");
+            audio.play();
         }
     }
 
@@ -107,6 +127,7 @@ window.addEventListener("DOMContentLoaded",function(){
 
         intervalo = setInterval(function(){
             if(minutos == 0 && segundos == 0){
+                btnIniciar.disabled = false;
                 clearInterval(intervalo);
                 clearInterval(randomNums);
                 setTempo();
@@ -132,6 +153,8 @@ window.addEventListener("DOMContentLoaded",function(){
         if(selNivel.value == ""){
             alert("Selecione um nível de dificuldade");
         }else{
+            btnIniciar.disabled = true;
+            tocarAudioNivel();
             playNums = true;
             selNivel.disabled = true;
             iniciarContagem(txtTempo.innerHTML);
@@ -145,6 +168,10 @@ window.addEventListener("DOMContentLoaded",function(){
     });
 
     btnParar.addEventListener("click",function(){
+        audio.pause();
+        audio =  new Audio("audio/intro.mp3");
+        audio.play();
+        btnIniciar.disabled = false;
         pararContagem();
         pararTempo();
         selNivel.disabled = false;
@@ -154,9 +181,11 @@ window.addEventListener("DOMContentLoaded",function(){
     });
 
     btnPausar.addEventListener("click",function(){
+        audio.pause();
         pausarTempo();
         pausarContagem();
         playNums = false;
+        btnIniciar.disabled = false;
     });
 
     selNivel.addEventListener("change",function(){
