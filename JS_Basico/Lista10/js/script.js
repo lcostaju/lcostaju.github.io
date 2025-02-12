@@ -10,6 +10,7 @@ window.addEventListener("DOMContentLoaded",function(){
     const btnIniciar = document.getElementById("btnIniciar");
     const btnParar = document.getElementById("btnParar");
     const btnPausar = document.getElementById("btnPausar");
+    const btnMute = document.getElementById("btnMute");
 
     var audio =  new Audio("audio/intro.mp3");
     audio.play();
@@ -132,6 +133,7 @@ window.addEventListener("DOMContentLoaded",function(){
                 clearInterval(randomNums);
                 setTempo();
                 alert("Tempo esgotado");
+                audio.pause();
                 audio =  new Audio("audio/intro.mp3");
                 audio.play();
                 selNivel.disabled = false;
@@ -207,4 +209,10 @@ window.addEventListener("DOMContentLoaded",function(){
             
         }
     });
+
+    btnMute.addEventListener("click",function(){
+        audio.pause();
+    });
+
+
 });
