@@ -132,6 +132,8 @@ window.addEventListener("DOMContentLoaded",function(){
                 clearInterval(randomNums);
                 setTempo();
                 alert("Tempo esgotado");
+                audio =  new Audio("audio/intro.mp3");
+                audio.play();
                 selNivel.disabled = false;
                 txtNumero.innerHTML = "_";
             }else{
