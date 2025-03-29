@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded",()=>{
         return maior;
     }
 
-    var ref = prompt("Informe um valor");
+    var ref = prompt("Informe um valor para as questoes do exercicio 2");
     var pEx2e = document.createElement("p");
     div.appendChild(pEx2e);
     pEx2e.innerHTML = `Verificar se todas as idades são maiores ou iguais a um valor informado pelo usuário. Idade informada = ${ref}, ${verMaior(vetAges,ref).toString()}`;
