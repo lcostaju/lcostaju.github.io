@@ -74,7 +74,7 @@ window.addEventListener("DOMContentLoaded",() => {
         var filterAges = arrAges.filter(age => age >= txtIdade.value)
         pH.innerHTML = `Exibir todas as idades maiores ou iguais a determinada idade: ${filterAges}`
 
-        pI.innerHTML = `A média das idades das pessoas com idades maiores ou iguais a determinada idade ${filterAges.reduce((total,age) => total+age,0)}`
+        pI.innerHTML = `A média das idades das pessoas com idades maiores ou iguais a determinada idade ${filterAges.reduce((total,age) => total+age,0)/filterAges.length}`
 
 
     })
