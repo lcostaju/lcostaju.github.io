@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Limelight&family=Russo+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Russo One", sans-serif;
+}
+
+.navBar {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.navBar>ul {
+    text-align: center;
+}
+
+.navBar>ul>li {
+    display: inline-block;
+}
+
+.navBar a:link,
+.navBar a:visited {
+    margin: 5px 0px 5px 0px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    padding: 15px 5px 15px 5px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.navBar a{
+    color:  rgb(248, 182, 14);
+    background-color: rgb(62, 60, 60);
+}
+
+nav a:hover {
+    background-color: rgb(248, 182, 14);
+    color: black;
+}
+
+h1 {
+    border: 3px solid black;
+    font-family: "Limelight", sans-serif;
+    color:  rgb(248, 182, 14);
+    margin-left: 100px;
+}
+
+section {
+    width: 1200px;
+    margin: auto;
+}
+
+.homeSection > .container {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.homeSection > .container > div {
+    width: 50%;
+    padding: 20px;
+}
+
+.emAltaSection h2{
+    text-align: center;
+}
+
+.emAltaSection >  .cardContainer{
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cardContainer > div{
+    padding: 10px;
+    text-align: center;
+    border: 2px solid red;
+    width: 20%;
+}
