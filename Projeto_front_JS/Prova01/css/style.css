@@ -150,3 +150,57 @@ footer{
     z-index: 10;
     cursor: pointer;
 }
+
+#movieContainer{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    color:rgb(248, 182, 14);
+    margin: 10px;
+}
+
+#movieContainer>div{
+    padding: 10px;
+
+}
+
+.divMovie{
+    /* border: 2px solid white; */
+    background-color: rgba(0, 0, 0, 0.774); /* Cor preta com 50% de transparência */
+    background-blend-mode: overlay; /* Combina a cor com a imagem */
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.divMovie p{
+    padding: 10px;
+}
+
+.imgMovie{
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datailsSection{
+    margin-top: 10px;
+}
+
+.tagline{
+    font-style: italic;
+    color:rgba(248, 182, 14, 0.596); 
+}
+
+#movieTrailer {
+    width: 900px;
+    height: 506px;
+    border: none;
+    margin: 10px;
+}
+
+#trailerMovie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

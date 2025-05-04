@@ -58,7 +58,18 @@ const showMovies = async () => {
         card.appendChild(rating);
         card.className = "movieCard";
 
+        if(movie.avaliacao > 7)
+            rating.style.color = "green";
+        else if(movie.avaliacao >5 && movie.avaliacao < 7 )
+            rating.style.color = "yellow";
+        else
+        rating.style.color = "red";
+
         cardContainer.appendChild(card);
+
+        card.addEventListener('click', () => {
+            window.location.href = `datails.html?id=${movie.id}`;
+        });
 
     });
 }
