@@ -10,15 +10,16 @@ window.addEventListener("DOMContentLoaded", async () => {
      // Aqui você pode usar os dados para renderizar os elementos na página
      movies.forEach(movie => {
         const card = document.createElement("div");
+        //Insere Titulo
+        const title = document.createElement("p");
+        title.innerHTML = movie.title;
+        card.appendChild(title);
         //Insere imagem
          const img = document.createElement("img");
          img.src = movie.poster;
          img.alt = movie.title;
          card.appendChild(img);
-         //Insere Titulo
-         const title = document.createElement("p");
-         title.innerHTML = movie.title;
-         card.appendChild(title);
+         
          //Insere Generos
          const genres = document.createElement("p");
          genres.innerHTML = `Genêros: ${movie.genres.join(", ")}`;
@@ -29,7 +30,7 @@ window.addEventListener("DOMContentLoaded", async () => {
          card.appendChild(releaseDate);
          //Insere Avaliação
          const rating = document.createElement("p");
-         rating.innerHTML = `Avaliação: ${movie.avaliacao}`;
+         rating.innerHTML = `Avaliação: ${movie.avaliacao.toFixed(2)}/10`;
          card.appendChild(rating);
         
          cardContainer.appendChild(card);
