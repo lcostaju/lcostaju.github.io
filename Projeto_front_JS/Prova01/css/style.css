@@ -73,21 +73,20 @@ section {
     margin: auto;
 }
 .homeSection{
-    
+    background-color: black;
+    border-radius: 10px;
 }
 main {
     padding-top: 60px; /* Ajuste conforme a altura do header */
 }
 
 .homeSection > .container {
-    background-color: black;
-    border: 2px solid black;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
     text-align: center;
-    border-radius: 10px;
     margin: 10px;
     color:  rgb(248, 182, 14);
 }
@@ -142,4 +141,12 @@ footer{
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
     margin-top: 10px;
+}
+
+.movieCard:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    cursor: pointer;
 }

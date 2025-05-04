@@ -32,6 +32,7 @@ window.addEventListener("DOMContentLoaded", async () => {
          const rating = document.createElement("p");
          rating.innerHTML = `Avaliação: ${movie.avaliacao.toFixed(2)}/10`;
          card.appendChild(rating);
+         card.className = "movieCard";
         
          cardContainer.appendChild(card);
 
