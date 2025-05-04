@@ -68,7 +68,8 @@ const showMovies = async () => {
         cardContainer.appendChild(card);
 
         card.addEventListener('click', () => {
-            window.location.href = `datails.html?id=${movie.id}`;
+            window.location.href = `datails.html`;
+            localStorage.setItem("idFilme",movie.id);
         });
 
     });

@@ -1,9 +1,10 @@
 import { getMovieDatails } from "./apiMovies.js";
 
 window.addEventListener("DOMContentLoaded", async () => {
-    const urlId = new URLSearchParams(window.location.search);
-    const filmeId = urlId.get('id');
-    showMovie(filmeId);
+    // const urlId = new URLSearchParams(window.location.search);
+    // const filmeId = urlId.get('id');
+    const idFilme = localStorage.getItem("idFilme");
+    showMovie(idFilme);
 });
 
 
