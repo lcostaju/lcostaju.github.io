@@ -11,6 +11,7 @@ const showMovie = async (id) => {
     const movieContainer = document.getElementById("movieContainer");
     const titleMovie = document.getElementById("titleMovie");
     const dataMovie = await getMovieDatails(id);
+    // console.log(dataMovie);
 
     //Titulo
     titleMovie.innerHTML = `${dataMovie.title} (${dataMovie.release_date.slice(0,4)}) `;
@@ -98,12 +99,37 @@ const showMovie = async (id) => {
     sinopse.innerHTML = dataMovie.overview;
     divMovie.appendChild(sinopse);
 
+    console.log(dataMovie.videos.results);
     //trailer
     const trailer = document.createElement("iframe");
     trailer.id = "movieTrailer";
-    const trailerKey = dataMovie.videos.results[0].key;
-    trailer.setAttribute("src",`https://www.youtube.com/embed/${trailerKey}`);
-    document.getElementById("trailerMovie").appendChild(trailer);
+    
+
+    //
+    // const emptytrailer = document.createElement("p");
+    //     emptytrailer.innerHTML = "Não foi encontrado trailer para esse filme";
+    //     divMovie.appendChild(emptytrailer);
+    //
+
+    
+    
+    if (dataMovie.videos && dataMovie.videos.results && dataMovie.videos.results.length > 0) {
+        
+        const trailerKey = dataMovie.videos.results[0].key;
+        trailer.setAttribute("src", `https://www.youtube.com/embed/${trailerKey}`);
+        document.getElementById("trailerMovie").appendChild(trailer);
+    } else {
+        // alert("teste");
+        const emptytrailer = document.createElement("p");
+        emptytrailer.innerHTML = "Não foi encontrado trailer para esse filme";
+        document.getElementById("trailerMovie").appendChild(emptytrailer);
+
+        const imgNotFound = document.createElement("img");
+        imgNotFound.setAttribute("src","img/not_found.jpg");
+        document.getElementById("trailerMovie").appendChild(imgNotFound);
+    }
+
+    
 
 
 
