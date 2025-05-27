@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    color: red;
+}
+
+.box{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+header,main,footer{
+    border: 2px solid black;
+}
