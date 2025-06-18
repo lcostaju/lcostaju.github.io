@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.section{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 50px;
+}
+
+.section h2{
+    margin-bottom: 20px;
+}
+
+.section p{
+    margin-bottom: 20px;
+}
+
+.section p:nth-child(odd){
+    font-weight: bolder;
+}

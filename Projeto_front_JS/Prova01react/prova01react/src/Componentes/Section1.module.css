@@ -1,0 +1,28 @@
+.section1{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.section1 img{
+    width: 400px;
+}
+
+.section1 div{
+    margin: 30px;
+    /* border: 2px solid black; */
+}
+
+.section1 input{
+    background-color: rgb(33, 33, 236);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-left: 50px;
+}
+
+.section1 h2{
+    margin-bottom: 20px;
+}
