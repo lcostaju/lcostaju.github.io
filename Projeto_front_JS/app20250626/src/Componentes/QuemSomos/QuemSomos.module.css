@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.quemSomos>div {
+    /* border: 2px solid black; */
+    display: flex;
+    width: 1216px;
+    height: 320px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    flex-shrink: 0;
+}
+
+.quemSomos h2 {
+    color: #F44C34;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 111.111% */
+
+}
+
+.quemSomos {
+    /* border: 2px solid #010917; */
+    background: rgba(255, 239, 239, 0.60);
+    
+    /* display: flex; */
+width: 1440px;
+padding: 36px 80px 50px 80px;
+justify-content: center;
+align-items: center;
+margin: auto;
+
+}
